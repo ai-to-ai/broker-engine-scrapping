@@ -3,7 +3,7 @@
 const puppeteer = require('puppeteer-core')
 const request = require('request')
 
-const api_key = "8caea8c1-c703-41e7-b854-02acba64f785"
+const api_key = ""
 async function scrape(){
 const browser = await puppeteer.connect({ 
   browserWSEndpoint: `wss://chrome.browserless.io?token=${api_key}`
@@ -12,8 +12,8 @@ const page = await browser.newPage()
  await page.setViewport({ width: 1920, height: 1080 })
 
 
-  const username = "james@moneytax.com"
-  const password = "PAS!@#$%^AAc!"
+  const username = ""
+  const password = ""
 
   console.log('go to brokerengine')
   await page.goto('https://app.brokerengine.com.au', { waitUntil: 'networkidle0'})

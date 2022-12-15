@@ -14,8 +14,8 @@ async function scrape(){
   const page =  await browser.newPage()
   page.setDefaultNavigationTimeout(0);
 
-  const username = "james@moneytax.com"
-  const password = "PAS!@#$%^AAc!"
+  const username = ""
+  const password = ""
 
   console.log('go to brokerengine')
   await page.goto('https://app.brokerengine.com.au', { waitUntil: 'networkidle0'})
